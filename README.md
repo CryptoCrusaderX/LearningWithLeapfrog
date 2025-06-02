@@ -35,3 +35,6 @@ A **class** is a blueprint or template for creating objects. It defines **attrib
 An object is an instance of a class. It represents a real-world entity with specific **properties** (attributes) and **behaviours** (methods).
 
 ---
+
+## Day 2/60
+
