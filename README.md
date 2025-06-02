@@ -58,6 +58,6 @@ When a method in the child class has the same name as one in the parent class, t
 Single Inheritance is a scenario where there is only one Base(parent) class and only one Derived (Child) class.
 
 ### Multiple Inheritance
-In multiple Inheritance a single child (derived) class is derived from the parent(base) class.
+In multiple Inheritance a single child (derived) class is derived from two parent(base) class.
 
 ---
