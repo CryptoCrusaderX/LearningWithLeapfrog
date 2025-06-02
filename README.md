@@ -38,3 +38,12 @@ An object is an instance of a class. It represents a real-world entity with spec
 
 ## Day 2/60
 
+### Inheritance
+Inheritance is a feature of OOP that allows one class (child/derived class) to acquire attributes and methods from another class (parent/base) class. It  helps establish a hierarchical relationship between classes.
+
+### Key ideas of Inheritance
+- `super()` <br>
+A function used to call a method or constructor from the parent class.
+- Method Overriding <br>
+When a method in the child class has the same name as one in the parent class, the child's method overrides the parent's method.
+
