@@ -1,6 +1,6 @@
 # 60DaysOfLearning2025
 
-I'll be using this repo to document my **#60DaysOfLearning** journey, where I can track my progress, stay consistent, and reflect along the way.
+I'll be using this repo to document my **#60DaysOfLearning** journey, where I can track my progress, stay consistent, and reflect along the way.I'll start from learning OOP in python an
 
 ---
 
