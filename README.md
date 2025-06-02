@@ -47,3 +47,15 @@ A function used to call a method or constructor from the parent class.
 - Method Overriding <br>
 When a method in the child class has the same name as one in the parent class, the child's method overrides the parent's method.
 
+### Types of Inheritance
+- Single Inheritance
+- Multiple Inheritance
+- Multi-Level Inheritance
+- Hierarchical Inheritance 
+- Hybrid Inheritance
+
+### Single Inheritance
+Single Inheritance is a scenario where there is only one Base(parent) class and only one Derived (Child) class.
+
+### Multiple Inheritance
+In multiple Inheritance a single child (derived) class is derived from the parent(base) class.
