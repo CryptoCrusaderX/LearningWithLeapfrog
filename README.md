@@ -61,3 +61,5 @@ Single Inheritance is a scenario where there is only one Base(parent) class and 
 In multiple Inheritance a single child (derived) class is derived from two parent(base) class.
 
 ---
+
+## Day 3/60
