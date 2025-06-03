@@ -63,3 +63,16 @@ In multiple Inheritance a single child (derived) class is derived from two paren
 ---
 
 ## Day 3/60
+- In multiple inheritance, if both parent classes have a method with the same name, however, if we want to call a specific method from one of the parent classes, we can do it by explicitly calling the method from the parent class, passing self as an argument.
+
+### Multi-Level Inheritance
+Mutli-Level Inheritance is the type of inheritance in which a class inherits from a class, which itself inherits from another class.__(Grandparent--Parent--Children)classe__
+- We can directly access method of Grandparent class from child class method by calling it explicitly by using the `name of grandparent-class.method`
+
+__or__
+- We can acess the method of grandparent class from method of parent class using `super()` method; and method of child using `super()` method.
+
+### Hierarchical Inheritance
+Hierarchical Inheritance is the type of inheritance in which a single class is inherited by multiple derived classes.
+
+---
