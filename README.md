@@ -80,3 +80,32 @@ Hierarchical Inheritance is the type of inheritance in which a single class is i
 ### Hybrid Inheritance
 
 Hybrid Inheritance is a blend of multiple inheritance types.In hybrid inheritance, the classes are derived from more than one base class, creating a complex inheritance structure.
+
+### Encapsulation
+Encapsulation combines two things:
+- Data (Attributes): Properties that hold the state of the object
+- Methods: Functions that define the behaviour of the object
+
+### Access Specifiers in python 
+
+__Public Attributes:__
+- Accessible from anywhere
+- No Special Syantax required(default).
+
+__Protected Attributes:__
+- Indicated by `_attribute` (single underscore)
+- A Convention: Indented for internal use only but still accessible
+
+__Private Attributes:__
+- Indicated by `__attribute` (double underscore)
+- Python uses name mangling to make this attributes harder to access directly.
+
+__Getter and Setter:__
+
+A getter and setter are methods used to access and update the attributes of class.
+- _Getter_: The getter method is used to retrieve the value of private attribute. it allows controlled acess to the attribute
+- _Setter_: The setter method is used to set or modify the value of a private attribute. It allows us to control how the value is updated, enabling validation or modification of data before it's actually assigned.
+
+There is also an buit-in property to simplify the creating of getters and setters.
+
+---
