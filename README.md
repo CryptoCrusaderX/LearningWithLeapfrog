@@ -76,5 +76,7 @@ __or__
 Hierarchical Inheritance is the type of inheritance in which a single class is inherited by multiple derived classes.
 
 ---
-
 ## Day 4/60
+### Hybrid Inheritance
+
+Hybrid Inheritance is a blend of multiple inheritance types.In hybrid inheritance, the classes are derived from more than one base class, creating a complex inheritance structure.
