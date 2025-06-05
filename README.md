@@ -1,6 +1,6 @@
 # 60DaysOfLearning2025
 
-I'll be using this repo to document my **#60DaysOfLearning** journey, where I can track my progress, stay consistent, and reflect along the way.I'll start from learning OOP in python an
+I'll be using this repo to document my **#60DaysOfLearning** journey, where I can track my progress, stay consistent, and reflect along the way.I'll start from learning OOP in python.
 
 ---
 
@@ -110,3 +110,22 @@ There is also an buit-in property to simplify the creating of getters and setter
 
 ---
 ## Day 5/60
+__Property Decorator__
+- an pythonic way to define getters and setters and.
+- Works like property() but uses decorator for cleaner code.
+
+__Name Mangling__
+- Python uses Name Mangling to make private attributes harder to access but not impossible. You can access them using `_ClassName_attribute`
+- Generally, this method is not recommended cause it voilates the purpose of encapsulation
+
+__Public Method__
+- Methods that can be accessed from anywhere, including outside the class.(default methods)
+- Name Convention: Public Methods do not use any special prefix
+
+__Protected Method__
+- Methods intended for internal use by the class and it's related code. However, they can still be accessed by from outside the class.
+- Naming Convention: Protected Methods starts with a single underscore (`_`)
+
+*Acessing Private Method*
+- Using  Public Methods that Internally calls Private Methods, This ensures that private methods remains hidden while serving their indented purpose.
+
