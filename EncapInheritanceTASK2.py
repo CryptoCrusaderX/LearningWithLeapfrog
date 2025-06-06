@@ -1,4 +1,3 @@
-# Base class
 class Person:
     def __init__(self, name, age, number):
         self._name = name
@@ -22,7 +21,7 @@ class Person:
         print(f"Contact Number: {self.__contact_number}")
 
 
-# Patient class inheriting Person
+# Patient class inheriting Person class
 class Patient(Person):
     def __init__(self, name, age, number, patient_id, ailments=None):
         super().__init__(name, age, number)
@@ -47,12 +46,12 @@ class Patient(Person):
         self.view_ailments()
 
 
-# Doctor class extending Person
+# Doctor class extending Person class
 class Doctor(Person):
     def __init__(self, name, age, number, doctor_id):
         super().__init__(name, age, number)
         self.__doctor_id = doctor_id
-        self._assigned_patients = []  # list to store patient objects
+        self._assigned_patients = []
 
     def assign_patient(self, patient):
         self._assigned_patients.append(patient)
