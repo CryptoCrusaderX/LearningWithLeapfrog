@@ -129,4 +129,4 @@ __Protected Method__
 *Acessing Private Method*
 - Using  Public Methods that Internally calls Private Methods, This ensures that private methods remains hidden while serving their indented purpose.
 ---
-
+## Day 6/60
