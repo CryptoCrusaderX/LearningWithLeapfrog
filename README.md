@@ -130,3 +130,5 @@ __Protected Method__
 - Using  Public Methods that Internally calls Private Methods, This ensures that private methods remains hidden while serving their indented purpose.
 ---
 ## Day 6/60
+
+Solved Inheritance and Encapsulation based questions, which helped me understand concept more cleary.
