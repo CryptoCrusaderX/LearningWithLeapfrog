@@ -133,3 +133,4 @@ __Protected Method__
 
 Solved Inheritance and Encapsulation based questions, which helped me understand concept more cleary.
 ---
+## Day 7/60
