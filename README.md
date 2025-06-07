@@ -136,3 +136,31 @@ Solved Inheritance and Encapsulation based questions, which helped me understand
 ---
 
 ## Day 7/60
+
+### Polymorphism
+The terms "Polymorphism" means "many form".<br>
+Polymorphism is a key concept in OOP, which allows objects of different class to respond to the same method call in different ways. It simplies code and and enhances flexiblity by enabling a single interface to represent different underlying forms(data types). 
+
+### Types of Polymorphism:-
+
+__Compile-Time Polymorphism:__
+- Achieved using method overloading and operator overloading
+- Allows Methods/Operators to behave differently based on their inputs
+
+__Run-Time Polymorphism:__
+- Achieved using method overiding
+- The behaviour of a method is determined at runtime based on object's type.
+
+### Method Overloading
+
+Method Overloading allows a class to define multiple methods with the same name but different argument lists.It enables method to behave differently based on the number or type of arguments passed.
+
+Python does not support traditional method overloading like other programming language such as  Java or C++. In python:
+- The latest defined method with the same name will overwrite the earlier ones
+- However, we can achieve similar behaviour using default arguments, variable lenghts arguments(`*args`and `**kwargs`) or type checking
+
+__Type Checking__
+
+Type Checking in Python refers to verifying the data type of variables, object  or a value, either at runtime or (optionally) during static analysis.
+
+---
