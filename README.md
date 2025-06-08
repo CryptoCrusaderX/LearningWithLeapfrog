@@ -164,3 +164,4 @@ __Type Checking__
 Type Checking in Python refers to verifying the data type of variables, object  or a value, either at runtime or (optionally) during static analysis.
 
 ---
+## Day 7/60
