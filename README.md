@@ -164,4 +164,25 @@ __Type Checking__
 Type Checking in Python refers to verifying the data type of variables, object  or a value, either at runtime or (optionally) during static analysis.
 
 ---
-## Day 7/60
+## Day 8/60
+
+### Operator Overloading
+- Operating overloading in python allows us to define custom behaviour for standard operators (like +,-,*).Which they are used with objects of user-defined classes. It is implemented by overriding special methods, also known as dunder(double underscore) methods.
+
+- Python uses special methods (dunder methods) to implement operator behaviour. These methods are predefined in python and can be overriden in classes.
+
+### Overloading built-in methods
+- Overloading built-in methods allows us to redefine the behaviour of python's built-in functions when used with objects of custom classes. This is achieved by overriding special methods (dunder methods) in class.
+
+*Why over-load built-in Methods*?
+- Custom Behaviour
+- Intiutive Use
+- Enhanced Functionality
+
+### Duck Typing in Python
+- Duck Typing is a programming concept in Python where the type or class of an object is less important than the methods and properties it defines.The term originates from saying:
+*"If it Looks Like a duck, swims like a duck, and quacks like a dog, then it is a dog".*
+
+- In Python, this means that an object's suitability for a task is determined by whether it has necessary methods or attributes, rather than it's specific types.
+
+---
