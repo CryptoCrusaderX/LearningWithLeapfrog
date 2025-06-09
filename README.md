@@ -187,3 +187,27 @@ Type Checking in Python refers to verifying the data type of variables, object  
 
 ---
 ## Day 9/60
+
+### Polymorphism with inheritance (Method Overiding)
+
+- Polymorphism with inheritance, achieved through method overiding, allows a subclass to redefine or extend the behaviour of a method defined in it's parent class. This enables objects of different classes to respond differently to the same method call.
+- The method in the subclass should have the same name, parameters and return type as the one in the parent class.
+
+### Abstraction
+
+Abstraction is the process of hiding implementation details and exposing only the essential functionality to the user. Focues on __"What"__ an object does, not __"how"__ it does.
+
+#### Abstraction is Achieved Through
+
+__1. Abstract Classes:__
+- Classes that act as blueprints
+- Can't be instantiated directly
+
+__2. Abstract Methods:__
+- Methods that are declared but not implemented in the abstract class.
+- Must be implemented by subclasses.
+
+__3. Key Python Tools:__
+- abc module (Abstract Base Class)
+- @abstractmethod decorator
+
