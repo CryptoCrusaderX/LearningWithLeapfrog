@@ -1,3 +1,4 @@
+# Polymorphism with Inheritance (method overiding)
 class Payment:
     def process_payment(self):
         return "Processing Generic Payment!"
