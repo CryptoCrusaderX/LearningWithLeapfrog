@@ -186,3 +186,4 @@ Type Checking in Python refers to verifying the data type of variables, object  
 - In Python, this means that an object's suitability for a task is determined by whether it has necessary methods or attributes, rather than it's specific types.
 
 ---
+## Day 9/60
