@@ -212,3 +212,19 @@ __3. Key Python Tools:__
 - @abstractmethod decorator
 
 ## Day 10/60
+
+__Abstract Class__
+
+- An abstract class is a blueprint for other classes.It defines the structure but does not provide full implementation
+
+- Abstract classes cannot be instantiated directly. They are designed to be inherited by subclasses.
+
+- They help enforce a contract for the derived classes to implement specific methods.
+
+__Abstract Method__
+
+- An abstract method is a method declared in an abstract class but without any implementation.
+
+- It serves as a placeholder, mandating a subclasses to provide their own implementation. 
+
+- Abstract methods are defined using the @abstractmethod decorator.
