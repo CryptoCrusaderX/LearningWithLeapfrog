@@ -41,7 +41,6 @@ class Square(Rectangle):
 
 
 shapes = [Circle(8), Rectangle(7, 9), Square(9)]
-
 for shape in shapes:
     print(f"{shape.__class__.__name__}:")
     print(f"    Area:{shape.area():.2f}")
