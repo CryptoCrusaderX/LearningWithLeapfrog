@@ -210,6 +210,7 @@ __2. Abstract Methods:__
 __3. Key Python Tools:__
 - abc module (Abstract Base Class)
 - @abstractmethod decorator
+---
 
 ## Day 10/60
 
@@ -228,3 +229,9 @@ __Abstract Method__
 - It serves as a placeholder, mandating a subclasses to provide their own implementation. 
 
 - Abstract methods are defined using the @abstractmethod decorator.
+---
+
+## Day 11/60
+__Solved Abstraction Based Question__
+
+---
