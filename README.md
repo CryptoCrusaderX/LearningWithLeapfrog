@@ -235,3 +235,16 @@ __Abstract Method__
 __Solved Abstraction Based Question__
 
 ---
+
+## Day 12/60
+### Metaclasses
+
+The classes that generate other classes are defined as metclasses, as well as the classes that inherit directly from type.
+
+__Now what is type?__<br>
+The Exact class that is used for class instantiation is called type.
+
+__MetaClass Usecases__
+- Class Verification
+- Prevent Inheriting the attributes
+- Dynamic Generation of classes 
