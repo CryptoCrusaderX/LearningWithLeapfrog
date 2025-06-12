@@ -23,7 +23,7 @@ class CustomAttributeChecker(type):
 
 # Now we make a class that uses our custom metaclass.
 class MyCustomClass(metaclass=CustomAttributeChecker):
-    # Try commenting out one of these lines to test the rules above.
+
     foo = 42
     bar = 34  # Having both 'foo' and 'bar' will trigger an error!
 
