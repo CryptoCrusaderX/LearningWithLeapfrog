@@ -248,3 +248,8 @@ __MetaClass Usecases__
 - Class Verification
 - Prevent Inheriting the attributes
 - Dynamic Generation of classes 
+--- 
+
+## Day 13/60
+
+Solved tow usecases of MetaClass i.e Prevent Inheriting the attributes and Dynamic Generation of classes 
