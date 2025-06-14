@@ -256,7 +256,7 @@ __MetaClass Usecases__
 
 ---
 
-#  Day 14/60 - OOP Recap & Revision
+##  Day 14/60
 
 Revisiting everything I’ve learned so far in Object-Oriented Programming using Python:
 
