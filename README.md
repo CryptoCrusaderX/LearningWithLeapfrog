@@ -252,4 +252,60 @@ __MetaClass Usecases__
 
 ## Day 13/60
 
-Solved tow usecases of MetaClass i.e Prevent Inheriting the attributes and Dynamic Generation of classes 
+- Solved tow usecases of MetaClass i.e Prevent Inheriting the attributes and Dynamic Generation of classes 
+
+---
+
+#  Day 14/60 - OOP Recap & Revision
+
+Revisiting everything I’ve learned so far in Object-Oriented Programming using Python:
+
+
+
+###  Core OOP Concepts
+- **Class**: Blueprint for creating objects.
+- **Object**: Instance of a class, with its own data and behaviors.
+- **Constructor (`__init__`)**: Initializes object properties.
+- **Attributes & Methods**: Define the state and behavior of objects.
+
+
+
+### Inheritance
+- Enables a class to inherit attributes and methods from another class.
+- Types: Single, Multiple, Multilevel, Hierarchical, Hybrid.
+- Used `super()` and method overriding to extend or modify parent behaviors.
+
+
+
+### Encapsulation
+- Bundles data and methods into one unit.
+- Controlled access using:
+  - Public (`name`)
+  - Protected (`_name`)
+  - Private (`__name`)
+- Implemented getters, setters, and used `@property` for clean access control.
+
+
+### Polymorphism
+- Objects can behave differently based on context.
+- Achieved through:
+  - Method Overriding
+  - Method Overloading (using `*args`, `**kwargs`)
+  - Operator Overloading with dunder methods (`__add__`, `__str__`, etc.)
+- Embraced Duck Typing: "If it quacks like a duck..."
+
+
+
+### Abstraction
+- Hides internal implementation and shows only what’s necessary.
+- Used abstract classes and methods via `abc` module and `@abstractmethod`.
+
+
+
+###  Metaclasses
+- Built logic that runs when classes are created.
+- Enforced custom rules (e.g., no class can have both `foo` and `bar`).
+- Dynamically generated classes and controlled their instantiation.
+
+---
+
