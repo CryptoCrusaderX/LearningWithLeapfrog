@@ -309,3 +309,26 @@ Revisiting everything I’ve learned so far in Object-Oriented Programming using
 
 ---
 
+##  Day 15/60
+Since, oop in python is finished from today, i'll start learning Requests Library from python.
+
+### Requests Libaray
+The request library is the defacto standard for making HTTP Requests in Python.It abstracts the complexities of making requests behind a beautiful, simple API so that we can, focus on interacting with services and consuming data in our application.
+
+__*Requests Library demans familarity with HTTP mehtods and Status codes so i revised them too:-*__
+
+__HTTP Methods:__
+- GET
+- PUT
+- POST
+- HEAD
+- DELETE
+- OPTIONS
+- PATCH
+
+__Status Code:-__
+- Information responses (`100 - 199`)
+- Sucessful responses (`200-299`)
+- Redirectional messages (`300-499`)
+- Client Error responses (`400-499`)
+- Server Error responses (`500-599`)
