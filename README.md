@@ -309,7 +309,7 @@ Revisiting everything I’ve learned so far in Object-Oriented Programming using
 
 ---
 
-##  Day 15/60
+##  Day 16/60
 Since, oop in python is finished from today, i'll start learning Requests Library from python.
 
 ### Requests Libaray
