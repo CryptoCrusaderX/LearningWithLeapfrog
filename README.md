@@ -332,3 +332,14 @@ __Status Code:-__
 - Redirectional messages (`300-499`)
 - Client Error responses (`400-499`)
 - Server Error responses (`500-599`)
+---
+##  Day 15/60
+### Covered Today:
+__How to send:__
+- `GET, POST, PUT, DELETE, HEAD`
+
+__How to:__
+- Send and format data
+- Handle response objects: `.json(), .text, .headers, .status_code, etc.`
+- Understand type handling in JSON
+- Realize that fake APIs don't persist data and real one does
