@@ -309,7 +309,7 @@ Revisiting everything I’ve learned so far in Object-Oriented Programming using
 
 ---
 
-##  Day 16/60
+##  Day 15/60
 Since, oop in python is finished from today, i'll start learning Requests Library from python.
 
 ### Requests Libaray
@@ -333,7 +333,7 @@ __Status Code:-__
 - Client Error responses (`400-499`)
 - Server Error responses (`500-599`)
 ---
-##  Day 15/60
+##  Day 16/60
 ### Covered Today:
 __How to send:__
 - `GET, POST, PUT, DELETE, HEAD`
