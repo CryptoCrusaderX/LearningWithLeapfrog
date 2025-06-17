@@ -343,3 +343,18 @@ __How to:__
 - Handle response objects: `.json(), .text, .headers, .status_code, etc.`
 - Understand type handling in JSON
 - Realize that fake APIs don't persist data and real one does
+
+---
+##  Day 17/60
+
+### Covered Today:
+__How to:__
+- Send and format parameters using params, json, and data
+
+- Handle response objects:
+  - .json() for parsed JSON
+  - .text for raw string
+  - .content for byte-level data
+  - .headers to inspect response metadata
+  - .status_code to check response status
+  - .url to view the final requested URL
