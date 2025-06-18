@@ -358,3 +358,19 @@ __How to:__
   - .headers to inspect response metadata
   - .status_code to check response status
   - .url to view the final requested URL
+---
+##  Day 18/60
+### Covered Today:
+
+__How to:__
+- Handle binary response content using:
+  - `.raw.read()` for low-level byte reading
+  - content for the entire binary payload
+  - `.iter_content`(chunk_size) to stream and write large responses efficiently
+- Use `stream=True` to lazily download content without loading it all into memory
+- Save binary data (like images) to a file using with open("file", "wb")
+- Understand the use of .raise_for_status() to trigger errors for HTTP codes like 404, 500
+
+__Explore different ways to send POST requests:__
+- As a list of tuples `([("key", "val")])`
+- As a dict with multiple values for a key `({"key": ["val1", "val2"]})`
