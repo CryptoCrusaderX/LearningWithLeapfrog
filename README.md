@@ -374,3 +374,24 @@ __How to:__
 __Explore different ways to send POST requests:__
 - As a list of tuples `([("key", "val")])`
 - As a dict with multiple values for a key `({"key": ["val1", "val2"]})`
+
+---
+##  Day 19/60
+### Covered Today:
+
+__How to:__
+- POST a multipart-encoded file using:
+  - files = `{"file": open("myfile.txt", "rb")}`
+  - Combine file with other form fields using data=...
+  - Upload to a server like `https://httpbin.org/post`
+
+__Access response headers using:__
+- response.headers to view metadata like Content-Type, Server
+- `response.headers.get("Some-Header")` for safe access
+
+__Work with cookies:__
+  - Read cookies from response via `response.cookies.get("cookie_name")`
+  - Send cookies in requests using `cookies={"name": "value"}`
+  - Use `requests.Session()` to persist cookies across multiple requests
+
+---
