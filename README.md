@@ -395,3 +395,22 @@ __Work with cookies:__
   - Use `requests.Session()` to persist cookies across multiple requests
 
 ---
+##  Day 20/60
+
+### Covered Today:
+
+__How to:__
+
+- Use requests.Session() to:
+
+  - Persist cookies, headers, and authentication across multiple requests
+  - Improve performance via connection reuse (connection pooling)
+  - Simulate logged-in behavior like browser tabs
+
+- Send authentication:
+  - Basic Auth using `auth=("username", "password")`
+  - Bearer Token via headers=`{"Authorization": "Bearer <token>"}`
+
+- Send custom headers:
+  - Use headers to pass metadata like User-Agent or API keys
+  - Syntax: headers=`{"X-Custom": "value", "User-Agent": "custom-bot/1.0"}`
