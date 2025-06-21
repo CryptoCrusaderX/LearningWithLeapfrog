@@ -414,3 +414,28 @@ __How to:__
 - Send custom headers:
   - Use headers to pass metadata like User-Agent or API keys
   - Syntax: headers=`{"X-Custom": "value", "User-Agent": "custom-bot/1.0"}`
+
+  ---
+  ##  Day 21/60
+### Covered Today:
+
+__How to:__
+
+- Handle cookies in requests:
+
+  - Read cookies from responses using `response.cookies.get("key")`
+
+  - Send cookies in a request using `cookies={"key": "value"}`
+
+  - Persist cookies across requests using `requests.Session()`
+
+- Understand redirects:
+
+  - requests follows redirects automatically by default
+
+  - View redirect chain using `.history`
+
+  - Get the final destination URL via `.url`
+
+  - Disable auto-redirects with `allow_redirects=False`
+--- 
