@@ -416,7 +416,7 @@ __How to:__
   - Syntax: headers=`{"X-Custom": "value", "User-Agent": "custom-bot/1.0"}`
 
   ---
-  ##  Day 21/60
+##  Day 21/60
 ### Covered Today:
 
 __How to:__
