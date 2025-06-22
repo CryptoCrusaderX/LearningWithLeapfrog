@@ -439,7 +439,7 @@ __How to:__
 
   - Disable auto-redirects with `allow_redirects=False`
 --- 
-##  Day 21/60
+##  Day 22/60
 ### Covered Today:
 
 __How to:__
@@ -459,3 +459,4 @@ __How to:__
     - ConnectionError
     - HTTPError
     - RequestException
+---
