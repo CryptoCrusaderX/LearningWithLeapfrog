@@ -439,3 +439,23 @@ __How to:__
 
   - Disable auto-redirects with `allow_redirects=False`
 --- 
+##  Day 21/60
+### Covered Today:
+
+__How to:__
+
+- Set timeouts in requests:
+  - Use timeout=value to avoid hanging requests (applies to both connect and read)
+  - Use `timeout=(connect_timeout, read_timeout)` to separate connection and response wait limits
+  - Timeouts can be floats (e.g., timeout=(2.5, 5.0))
+
+- If the request exceeds the limit:
+
+  - ConnectTimeout for delayed connection
+  - ReadTimeout for delayed data
+- Handle exceptions gracefully:
+  - Use try/except to catch requests.exceptions.* like:
+    - Timeout
+    - ConnectionError
+    - HTTPError
+    - RequestException
