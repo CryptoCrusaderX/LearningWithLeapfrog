@@ -460,3 +460,28 @@ __How to:__
     - HTTPError
     - RequestException
 ---
+## Day 23/60
+
+## Covered Today:
+
+*Goal of exception handling is not to correct the error occuring part, but to gracefully terminate the program in the case of exception.*
+
+__Types of errors:__
+- Syntax Error 
+- Logical Error
+- Runtime Error
+
+__Different Type of RunTime Errors:__
+- NameError
+- AtrributeError
+- Zero Division Error
+- Index Error
+- Type Error
+
+__Structure of Exception handling:__
+- try:
+- except:
+- else:
+- finally
+---
+
