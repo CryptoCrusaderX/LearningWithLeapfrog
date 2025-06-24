@@ -484,7 +484,7 @@ __Structure of Exception handling:__
 - else:
 - finally
 ---
-## Day 23/60
+## Day 24/60
 
 ## Covered Today:
 
