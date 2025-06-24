@@ -484,4 +484,9 @@ __Structure of Exception handling:__
 - else:
 - finally
 ---
+## Day 23/60
 
+## Covered Today:
+
+- Exception Handling
+- Displaying the type of error occurred
