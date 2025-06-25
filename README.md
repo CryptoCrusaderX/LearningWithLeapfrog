@@ -462,7 +462,7 @@ __How to:__
 ---
 ## Day 23/60
 
-## Covered Today:
+### Covered Today:
 
 *Goal of exception handling is not to correct the error occuring part, but to gracefully terminate the program in the case of exception.*
 
@@ -486,8 +486,21 @@ __Structure of Exception handling:__
 ---
 ## Day 24/60
 
-## Covered Today:
+### Covered Today:
 
 - Exception Handling
 - Displaying the type of error occurred
+---
+
+## Day 25/60
+
+### Covered Today:
+
+__Raising Custom Explanation:__
+- Following is the format of making custom exception.<br>
+`class NameofException(PredefinedException):`<br>
+`  def __init__(self,msg):`<br>
+`   self.msg=msg` 
+- We can raise exception using 'raise' keyword.
+
 ---
