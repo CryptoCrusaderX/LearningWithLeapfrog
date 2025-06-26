@@ -504,3 +504,28 @@ __Raising Custom Explanation:__
 - We can raise exception using 'raise' keyword.
 
 ---
+
+## Day 26/60
+
+### Covered Today:
+
+__Revised Rules to write *try-except-else-finally* blocks__
+1. Whenever we are writing try block,compulsory we should wirte exept block or finaly blocks.<br>
+i.e, try without except or finally is always invalid
+
+2. Whenver we are writing except block, compulsory try block should be there.<br>
+i.e, except without try is always invalid
+
+3. Whenever we are writing finally block, compulsory try block should be there.<br>
+i.e, finally without try is always invalid
+
+4. Whenever we are writing else block, compulsory except block should be there.<br>
+i.e, else without except is always invalid.
+
+5. We can write multiple except blocks for same try, but we cannot write multiple else blocks and finally blocks
+
+6. In try-except-else-finally order is important
+
+7. We can write try-except-else-finally inside, try except, else and finally.Hence nesting of try-except-else-finally is always possible.
+
+__Made of python program following all of the above rule__
