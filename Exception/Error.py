@@ -18,3 +18,6 @@ else:
     for i in range(0, n):
         p = p * a[i]
     print("Product to that index is", p)
+finally:
+    print("Inside Finally, This blocks always runs")
+    print("Reverse of that list is:", a[::-1])
