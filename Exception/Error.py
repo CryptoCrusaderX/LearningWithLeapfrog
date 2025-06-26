@@ -6,7 +6,10 @@ try:
         sum = sum + a[i]
     print("Inside Try!")
     print("Sum of the index is ", sum)
-except:
+except (ValueError, TypeError, IndexError) as e:
+    print(e)
+    print("What displayed above is the type of error Occured")
+
     sum = 0
     for i in range(n):
         sum = sum + int(a[i])
