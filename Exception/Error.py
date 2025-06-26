@@ -12,3 +12,9 @@ except:
         sum = sum + int(a[i])
     print("Inside Except")
     print("Sum to that index is", sum)
+else:
+    print("Exception not occured,so inside else")
+    p = 1
+    for i in range(0, n):
+        p = p * a[i]
+    print("Product to that index is", p)
