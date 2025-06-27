@@ -529,3 +529,31 @@ i.e, else without except is always invalid.
 7. We can write try-except-else-finally inside, try except, else and finally.Hence nesting of try-except-else-finally is always possible.
 
 __Made of python program following all of the above rule__
+
+---
+
+## Day 27/60
+
+### Covered Today:
+
+__File Handling:__
+It refers to the process by which data is stored and retrived from files using a program.
+
+- __Opening & Closing a file:__
+  - Opening Format: `f=open("file_name","opening mode")`
+  - Closing Format: `f.close`
+
+- __Reading file:__
+  - When you open a file without metioning mode, then default mode is "read" mode.  
+  - If file exist, it opens file in read mode, otherwise generate error
+
+- __Writing to the file:__
+  - When opening file in write mode, opens file if file exists, otherwise create and open a new file.
+  - Write mode overwrites the previous contetns of the file
+
+- __Append to the file:__
+  - `append()` adds new content to the file. It does not overwrite old contents
+
+---
+
+
