@@ -555,5 +555,22 @@ It refers to the process by which data is stored and retrived from files using a
   - `append()` adds new content to the file. It does not overwrite old contents
 
 ---
+## Day 28/60
 
+### Covered Today:
 
+- __writelines() method:__<br>
+writeline() method is use to write lists to the file.Contents of lists are stored as the string.
+
+- __Reading from file:__<br>
+  - `.read()` reads all the contents of the file.
+
+- __readline():__<br>
+  - Reads first/single line
+  - If two readline() are used. It reads firsts and second line, no need to write consecutively.
+
+- __tell(),read(n):__
+  - tell() gives current position of the file object
+  - read(n) reads 'n' characters of the starting from current file position.
+
+---
