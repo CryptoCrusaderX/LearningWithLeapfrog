@@ -586,3 +586,6 @@ writeline() method is use to write lists to the file.Contents of lists are store
 
 - __Removing a file:__
   - Need to use os module: `os.remove(file_name)`
+
+---
+
