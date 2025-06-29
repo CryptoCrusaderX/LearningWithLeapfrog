@@ -574,3 +574,15 @@ writeline() method is use to write lists to the file.Contents of lists are store
   - read(n) reads 'n' characters of the starting from current file position.
 
 ---
+## Day 29/60
+
+### Covered Today:
+
+- __Loop in file:__
+  - Reads one line at a time
+
+- __Check if file exists or not:__
+  - We need to import os module
+
+- __Removing a file:__
+  - Need to use os module: `os.remove(file_name)`
