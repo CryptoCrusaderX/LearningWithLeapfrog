@@ -589,7 +589,7 @@ writeline() method is use to write lists to the file.Contents of lists are store
 
 ---
 
-## Day 29/60
+## Day 30/60
 
 ### Covered Today:
 
