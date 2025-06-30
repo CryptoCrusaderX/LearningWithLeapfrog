@@ -1,0 +1,5 @@
+f = open("example.txt", "a")
+f.write("How are you??")
+f.write("\nGet well soon")
+f.write("\n Check")
+f.close()
