@@ -589,3 +589,10 @@ writeline() method is use to write lists to the file.Contents of lists are store
 
 ---
 
+## Day 29/60
+
+### Covered Today:
+
+Revised everything leanred about file handling and written a code including those concepts.
+
+---
