@@ -599,3 +599,25 @@ Revised everything leanred about file handling and written a code including thos
 
 ### Covered Today:
 
+- **Session Object Basics:**
+  - Maintains parameters like headers, auth, and cookies across multiple requests
+  - Reuses TCP connections for better performance (connection pooling)
+
+- **Persisting Cookies:**
+  - Cookies set during a session are remembered and sent automatically
+  - Example: `s.get('https://httpbin.org/cookies/set/name/value')`
+
+- **Setting Default Parameters:**
+  - Use `s.headers.update()` to set default headers
+  - Use `s.auth = ('user', 'pass')` to persist authentication across requests
+
+- **Overriding Session Parameters:**
+  - Request-specific parameters override session-level values
+  - Method-level values (like headers or cookies) are not saved between requests
+
+- **Manually Managing Cookies:**
+  - Use `RequestsCookieJar()` to create and assign cookies manually
+  - Example: `s.cookies = jar` after setting values in the jar
+
+- **Using Session as Context Manager:**
+  - Ensures session is automatically closed with `with requests.Session() as s: ...`
