@@ -630,11 +630,13 @@ Revised everything learned about file handling and written a code including thos
   - `requests.get()` creates a Request and returns a Response
 
 - **Inspecting Responses:**
-  - `r.headers` → server’s response headers
-  - `r.text` / `r.json()` → response content
+  - `r.headers`-- server’s response headers
+  - `r.text` / `r.json()`--response content
 
 - **Inspecting What You Sent:**
-  - `r.request.headers` → headers your script sent
+  - `r.request.headers`--headers your script sent
 
 - **Use Case:**
   - Helpful for debugging, API testing, and understanding server-client interactions
+
+---
