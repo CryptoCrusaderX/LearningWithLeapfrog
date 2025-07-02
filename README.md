@@ -593,7 +593,7 @@ writeline() method is use to write lists to the file.Contents of lists are store
 
 ### Covered Today:
 
-Revised everything leanred about file handling and written a code including those concepts.
+Revised everything learned about file handling and written a code including those concepts.
 ---
 ## Day 31/60
 
@@ -621,3 +621,20 @@ Revised everything leanred about file handling and written a code including thos
 
 - **Using Session as Context Manager:**
   - Ensures session is automatically closed with `with requests.Session() as s: ...`
+
+---
+## Day 32/60
+
+### Covered Today:
+- **Request & Response Objects:**
+  - `requests.get()` creates a Request and returns a Response
+
+- **Inspecting Responses:**
+  - `r.headers` → server’s response headers
+  - `r.text` / `r.json()` → response content
+
+- **Inspecting What You Sent:**
+  - `r.request.headers` → headers your script sent
+
+- **Use Case:**
+  - Helpful for debugging, API testing, and understanding server-client interactions
