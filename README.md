@@ -640,3 +640,21 @@ Revised everything learned about file handling and written a code including thos
   - Helpful for debugging, API testing, and understanding server-client interactions
 
 ---
+## Day 33/60
+
+### Covered Today:
+
+- **Prepared Requests:**
+  - Built using `Request` + `Session.prepare_request()`
+  - Gives full control over headers, body, and timing
+
+- **When to use `merge_environment_settings()`:**
+  - Only needed for:
+    - Self-signed SSL certs
+    - Proxies from environment
+    - Streaming, timeouts, client certs
+
+  - Not needed for:
+    - Normal HTTPS websites with public certs
+    - When no proxies or special settings are used
+---
