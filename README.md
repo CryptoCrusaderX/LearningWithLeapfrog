@@ -672,3 +672,4 @@ __SSL Certificate Verification:__
   - Use `verify='/path/to/ca.pem'`
   - Set `REQUESTS_CA_BUNDLE` env var
   - Use `verify=False` (testing only — insecure)
+---
