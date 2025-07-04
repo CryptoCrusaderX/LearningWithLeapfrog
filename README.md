@@ -658,3 +658,17 @@ Revised everything learned about file handling and written a code including thos
     - Normal HTTPS websites with public certs
     - When no proxies or special settings are used
 ---
+
+## Day 34/60
+### Covered Today:
+
+__SSL Certificate Verification:__
+
+- requests verifies HTTPS certs by default
+- Fails if:
+  - Cert is self-signed
+  - Hostname doesn’t match
+- Fix options:
+  - Use `verify='/path/to/ca.pem'`
+  - Set `REQUESTS_CA_BUNDLE` env var
+  - Use `verify=False` (testing only — insecure)
