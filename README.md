@@ -676,7 +676,8 @@ __SSL Certificate Verification:__
 
 ## Day 35/60
 
-### Client & CA Certificates
+### Covered Today
+**Client & CA Certificates**
 
 - **Client Certificates:**
   - Use `cert=(cert_path, key_path)` or a single bundle file
