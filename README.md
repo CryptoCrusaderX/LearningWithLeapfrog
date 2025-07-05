@@ -673,3 +673,21 @@ __SSL Certificate Verification:__
   - Set `REQUESTS_CA_BUNDLE` env var
   - Use `verify=False` (testing only — insecure)
 ---
+
+## Day 35/60
+
+### Client & CA Certificates
+
+- **Client Certificates:**
+  - Use `cert=(cert_path, key_path)` or a single bundle file
+  - Must be **unencrypted**
+  - Can be set in a `Session`
+  - Wrong path = `SSLError`
+
+- **CA Certificates:**
+  - Used to verify the server’s identity
+  - `requests` relies on `certifi`
+  - Keep `certifi` updated for security:
+    ```bash
+    pip install --upgrade certifi
+    ```
