@@ -676,7 +676,7 @@ __SSL Certificate Verification:__
 
 ## Day 35/60
 
-### Covered Today
+### Covered Today:
 **Client & CA Certificates**
 
 - **Client Certificates:**
