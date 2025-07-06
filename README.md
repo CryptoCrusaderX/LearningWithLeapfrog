@@ -700,6 +700,6 @@ __Body Content Workflow in `requests__
 
 - **By default**, full response body is downloaded immediately.
 - Use `stream=True` to defer downloading until needed.
-  ```python
-  r = requests.get(url, stream=True)
+  
+  `r = requests.get(url, stream=True)`
 ---
