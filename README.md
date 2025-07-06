@@ -696,9 +696,10 @@ __SSL Certificate Verification:__
 ## Day 36/60
 ### Covered Today:
 
-__Body Content Workflow in requests__
+__Body Content Workflow in `requests__
 
 - **By default**, full response body is downloaded immediately.
 - Use `stream=True` to defer downloading until needed.
   ```python
   r = requests.get(url, stream=True)
+---
