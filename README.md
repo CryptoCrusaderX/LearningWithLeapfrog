@@ -696,10 +696,31 @@ __SSL Certificate Verification:__
 ## Day 36/60
 ### Covered Today:
 
-__Body Content Workflow in `requests__
+__Body Content Workflow in requests__
 
 - **By default**, full response body is downloaded immediately.
 - Use `stream=True` to defer downloading until needed.
   
   `r = requests.get(url, stream=True)`
+---
+
+## Day 37/60
+
+### Covered Today
+
+__Keep-Alive Connections:__
+
+- Enabled automatically via `Session` (powered by `urllib3`)
+- Reuses connections for better performance
+-  Connection is only released after full response body is read
+  - Use `r.content`, `r.close()`, or a `with` block to ensure cleanup
+
+__Streaming Uploads:__
+
+- Send large files without loading into memory
+- Use a file-like object:
+
+  `with open('file.bin', 'rb') as f:
+      requests.post('https://example.com/upload', data=f)`
+
 ---
