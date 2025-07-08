@@ -724,3 +724,21 @@ __Streaming Uploads:__
       requests.post('https://example.com/upload', data=f)`
 
 ---
+
+## Day 38/60
+### Covered today:
+
+__Keep-Alive:__
+
+- Handled automatically via `Session` (urllib3)
+- Reuses connections after full response is read
+- Use `r.content`, `r.close()`, or a `with` block to release
+
+__Streaming Uploads:__
+
+- Sends large files without loading into memory
+- Use binary mode (`'rb'`) to avoid `Content-Length` issues
+
+  `with open('file.bin', 'rb') as f:
+      requests.post(url, data=f)`
+---
