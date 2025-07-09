@@ -742,3 +742,19 @@ __Streaming Uploads:__
   `with open('file.bin', 'rb') as f:
       requests.post(url, data=f)`
 ---
+# Day 39/60: 
+
+### Covered Today:
+
+__Chunked Transfer Encoding:__
+
+Chunked transfer encoding is a mechanism in HTTP/1.1 that allows data to be sent in a series of chunks instead of a single continuous block. This is especially useful when the total content size is unknown before sending or when streaming large amounts of data.
+
+__Outgoing Requests (Sending Chunked Data):__
+
+- In Python's `requests` library, we can send chunk-encoded requests by passing a generator or any iterable without a predetermined length as the `data` parameter.
+- The generator yields chunks of data sequentially.
+- This approach prevents the need to load the entire payload into memory at once, making it efficient for large or streaming data.
+- `yeilds` is just same as `return` function but it does more like picking where it was left when the last function was called, which helps while working with large or endless data efficeintly.
+
+---
