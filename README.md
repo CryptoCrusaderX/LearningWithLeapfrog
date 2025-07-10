@@ -758,3 +758,22 @@ __Outgoing Requests (Sending Chunked Data):__
 - `yeilds` is just same as `return` function but it does more like picking where it was left when the last function was called, which helps while working with large or endless data efficeintly.
 
 ---
+## Day 40/60
+
+### Covered Today:
+
+- **Main Guard (`if __name__ == "__main__"`):**
+  - Used to run certain code only when the script is executed directly.
+  - Prevents code from running during import.
+  - Keeps modules reusable and clean.
+
+- **Custom Hook System with `requests`:**
+  - Created a wrapper around `requests.get()` to support custom hooks.
+  - Hooks are functions that run **after** a response is received.
+  - Useful for logging, validation, or response processing.
+
+- **How Hooks Work:**
+  - A list of hook functions is passed to the custom `get()` function.
+  - Each hook is automatically called with the `response` object.
+
+---
