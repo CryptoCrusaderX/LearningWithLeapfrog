@@ -777,7 +777,7 @@ __Outgoing Requests (Sending Chunked Data):__
   - Each hook is automatically called with the `response` object.
 
 ---
-## Day 41/60on
+## Day 41/60
 
 ### Covered Today:
 
