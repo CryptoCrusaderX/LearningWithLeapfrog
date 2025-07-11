@@ -777,3 +777,13 @@ __Outgoing Requests (Sending Chunked Data):__
   - Each hook is automatically called with the `response` object.
 
 ---
+## Day 41/60on
+
+### Covered Today:
+
+- `AuthBase` is used to create custom authentication methods in the `requests` library.
+- It's not more secure by default, but it allows full control over how authentication is handled.
+- Useful when the server expects non-standard headers or token-based auth.
+- Built-in options like `HTTPBasicAuth` and `HTTPDigestAuth` work for common cases.
+- Use `AuthBase` when you need flexibility, like injecting dynamic headers or custom logic.
+---
