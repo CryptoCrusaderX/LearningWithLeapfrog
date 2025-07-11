@@ -5,7 +5,7 @@ url = "https://httpbin.org/get"
 
 def custom_get(url, hooks=None):
     print(f"Sending GET requests to:{url}")
-    response = requests.get(url)
+    response = requests.get()
 
     if hooks:
         for hook in hooks:
