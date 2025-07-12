@@ -787,3 +787,25 @@ __Outgoing Requests (Sending Chunked Data):__
 - Built-in options like `HTTPBasicAuth` and `HTTPDigestAuth` work for common cases.
 - Use `AuthBase` when you need flexibility, like injecting dynamic headers or custom logic.
 ---
+## Day 42/60
+
+### Covered Today:
+
+- **Streaming Requests:**
+  - Use `stream=True` with `requests.get()` to defer downloading response body.
+  - Helps handle large or real-time data efficiently.
+
+- **iter_lines():**
+  - Iterates over response content line-by-line.
+  - Use `decode('utf-8')` or `decode_unicode=True` to properly read lines.
+
+- **Fallback Encoding:**
+  - Set `r.encoding = 'utf-8'` if the server doesn’t provide encoding.
+
+- **Non-Reentrant Safe:**
+  - `iter_lines()` shouldn't be called multiple times.
+
+- **Use Case:**
+  - Streaming APIs like Twitter, or any live-feed endpoint.
+
+---
