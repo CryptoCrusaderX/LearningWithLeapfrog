@@ -809,3 +809,27 @@ __Outgoing Requests (Sending Chunked Data):__
   - Streaming APIs like Twitter, or any live-feed endpoint.
 
 ---
+# Day 43/60  
+Covered Today:
+
+- **Proxies in Requests:**  
+  Configure proxies per request or per session using the `proxies` parameter or session’s `.proxies` attribute.
+
+- **Proxy URLs:**  
+  Must include scheme like `http://` or `https://`.
+
+- **Environment Variables for Proxies:**  
+  Use `HTTP_PROXY`, `HTTPS_PROXY`, `ALL_PROXY` environment variables to globally configure proxies.
+
+- **Common Proxy Error:**  
+  `ConnectionRefusedError` / `ProxyError` occurs if no proxy server is running at the specified address and port.
+
+- **Mitmproxy:**  
+  Useful local proxy tool for debugging HTTP(S) traffic. Needs to be running for proxy requests to succeed.
+
+- **Tips:**  
+  - Don’t set proxy if you don’t have a valid proxy server.  
+  - When using proxies with HTTPS, ensure local machine trusts proxy’s root certificate.  
+  - Proxy environment variables override session-level proxy settings unless explicitly set per request.
+
+---
