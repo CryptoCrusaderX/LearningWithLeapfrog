@@ -810,7 +810,7 @@ __Outgoing Requests (Sending Chunked Data):__
 
 ---
 # Day 43/60  
-Covered Today:
+### Covered Today:
 
 - **Proxies in Requests:**  
   Configure proxies per request or per session using the `proxies` parameter or session’s `.proxies` attribute.
@@ -833,3 +833,28 @@ Covered Today:
   - Proxy environment variables override session-level proxy settings unless explicitly set per request.
 
 ---
+# Day 44/60
+
+### Covered Today: SOCKS Proxy in Requests
+
+- Requests supports SOCKS proxies since version 2.10.0.
+- Requires extra installation: pip install "requests[socks]".
+
+__Usage:__
+
+- Use socks5 or socks5h in the proxies dictionary:
+  - socks5://user:pass@host:port
+  - socks5h://user:pass@host:port
+- Works like a regular HTTP/HTTPS proxy setup.
+
+ __socks5 vs socks5h:__
+
+- **socks5**: DNS resolution happens on the client side (may leak DNS).
+- **socks5h**: DNS resolution happens on the proxy server (better privacy).
+
+__Useful For:__
+
+- Using Tor and other anonymity tools.
+- Bypassing firewalls or internet censorship.
+- Handling non-HTTP traffic through a proxy.
+
