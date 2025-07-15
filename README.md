@@ -862,20 +862,20 @@ __Useful For:__
 ### Covered Today:
 
 - __Encoding in Responses:__
-- Servers send raw bytes.
-- `requests` decodes bytes to text using the correct encoding.
+  - Servers send raw bytes.
+  - `requests` decodes bytes to text using the correct encoding.
 
 - __How Encoding is Determined:__
-1. Checks `Content-Type` header for `charset`.
-2. If missing, uses:
-   - `chardet` (if installed, LGPL-licensed)
-   - `charset-normalizer` (default on Python 3, MIT-licensed)
-3. If guessing fails and content is text, defaults to `ISO-8859-1` (as per RFC 2616).
+  1. Checks `Content-Type` header for `charset`.
+  2. If missing, uses:
+    - `chardet` (if installed, LGPL-licensed)
+    - `charset-normalizer` (default on Python 3, MIT-licensed)
+  3. If guessing fails and content is text, defaults to `ISO-8859-1` (as per RFC 2616).
 
 - __Manual Encoding Override:__
-- Set `response.encoding = 'utf-8'` manually if needed.
+  - Set `response.encoding = 'utf-8'` manually if needed.
 
 - __Compliance:__
-- `requests` aims to follow HTTP specs (RFCs), unless it negatively affects usability.
+  - `requests` aims to follow HTTP specs (RFCs), unless it negatively affects usability.
 
 ---
