@@ -879,3 +879,23 @@ __Useful For:__
   - `requests` aims to follow HTTP specs (RFCs), unless it negatively affects usability.
 
 ---
+# Day 46/60
+
+### Covered Today:
+
+- `requests` supports common HTTP methods:
+  - `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `OPTIONS`, `HEAD`
+
+- **GET**:
+  - Used to retrieve data (e.g., commit info from GitHub).
+  - Responses can be parsed with `.json()`, `.text`, or `.content`.
+
+- **OPTIONS**:
+  - Checks which methods are supported on a URL (not always implemented).
+
+- **Working with APIs**:
+  - Can use HTTP verbs to interact with endpoints like GitHub Issues or Comments.
+
+- **Useful Patterns**:
+  - Check `r.status_code`, `r.headers`, and `r.json()` for handling responses.
+---
