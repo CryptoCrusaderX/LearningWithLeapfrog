@@ -913,8 +913,7 @@ __Posting and Editing GitHub Issue Comments via API:__
 
 __Authentication:__
 
-- Used `HTTPBasicAuth` from `requests.auth` to authenticate with the GitHub API.
-  ```python
-  from requests.auth import HTTPBasicAuth
-  auth = HTTPBasicAuth('username', 'password')
+- Used `HTTPBasicAuth` from `requests.auth` to authenticate with the GitHub API.<br>
+  `from requests.auth import HTTPBasicAuth auth
+   = HTTPBasicAuth('username', 'password')`
 ---
