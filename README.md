@@ -899,3 +899,22 @@ __Useful For:__
 - **Useful Patterns**:
   - Check `r.status_code`, `r.headers`, and `r.json()` for handling responses.
 ---
+
+# Day 47/60
+
+### Covered Today:
+
+__Posting and Editing GitHub Issue Comments via API:__
+
+- Used `POST` to add a comment to a GitHub issue.
+- Used `PATCH` to update/edit an existing comment.
+- Used `DELETE` to remove the comment.
+- Used `HEAD` to fetch only response headers (e.g., to check rate limits).
+
+__Authentication:__
+
+- Used `HTTPBasicAuth` from `requests.auth` to authenticate with the GitHub API.
+  ```python
+  from requests.auth import HTTPBasicAuth
+  auth = HTTPBasicAuth('username', 'password')
+---
