@@ -742,7 +742,7 @@ __Streaming Uploads:__
   `with open('file.bin', 'rb') as f:
       requests.post(url, data=f)`
 ---
-# Day 39/60: 
+## Day 39/60: 
 
 ### Covered Today:
 
@@ -809,7 +809,7 @@ __Outgoing Requests (Sending Chunked Data):__
   - Streaming APIs like Twitter, or any live-feed endpoint.
 
 ---
-# Day 43/60  
+## Day 43/60  
 ### Covered Today:
 
 - **Proxies in Requests:**  
@@ -833,7 +833,7 @@ __Outgoing Requests (Sending Chunked Data):__
   - Proxy environment variables override session-level proxy settings unless explicitly set per request.
 
 ---
-# Day 44/60
+## Day 44/60
 
 ### Covered Today: SOCKS Proxy in Requests
 
@@ -879,7 +879,7 @@ __Useful For:__
   - `requests` aims to follow HTTP specs (RFCs), unless it negatively affects usability.
 
 ---
-# Day 46/60
+## Day 46/60
 
 ### Covered Today:
 
@@ -900,7 +900,7 @@ __Useful For:__
   - Check `r.status_code`, `r.headers`, and `r.json()` for handling responses.
 ---
 
-# Day 47/60
+## Day 47/60
 
 ### Covered Today:
 
@@ -917,3 +917,19 @@ __Authentication:__
   `from requests.auth import HTTPBasicAuth auth
    = HTTPBasicAuth('username', 'password')`
 ---
+## Day 48/60
+
+### Covered Today:
+- The `requests` library supports not only standard HTTP methods (GET, POST, etc.) but also **custom verbs**.
+- For verbs like `MKCOL` used by WebDAV servers, `.request()` method can be used to send them.
+- This makes `requests` flexible for interacting with APIs that implement non-standard HTTP methods.
+
+__Example Use Cases:__
+
+- WebDAV servers using verbs like:
+  - `MKCOL` – to create a collection (like a folder).
+  - `COPY`, `MOVE`, etc.
+
+__Key Takeaway:__
+
+- `.request(method, url, ...)` in `requests` lets you use **any** HTTP verb your server supports.
