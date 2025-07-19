@@ -934,7 +934,7 @@ __Key Takeaway:__
 
 - `.request(method, url, ...)` in `requests` lets you use **any** HTTP verb your server supports.
 ---
-# LSPP Day 48/60
+# LSPP Day 49/60
 
 ### Covered Today:
 
