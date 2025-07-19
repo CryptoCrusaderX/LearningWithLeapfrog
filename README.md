@@ -933,3 +933,24 @@ __Example Use Cases:__
 __Key Takeaway:__
 
 - `.request(method, url, ...)` in `requests` lets you use **any** HTTP verb your server supports.
+---
+# LSPP Day 48/60
+
+### Covered Today:
+
+- The `requests` library in Python supports not only standard HTTP methods like GET, POST, PUT, etc., but also **custom verbs**.
+- For less common HTTP methods (used in specialized protocols like WebDAV), the `.request()` method in `requests` allows you to send them manually.
+- This adds flexibility when working with APIs that implement extended or non-standard HTTP verbs.
+
+__Example Use Cases:__
+
+- WebDAV servers often use custom verbs:
+    - `MKCOL`: Create a collection (like a folder).
+    - `COPY`, `MOVE`: To copy or move files remotely.
+    - Other WebDAV methods depending on the service.
+
+__Key Takeaway:__
+
+Using `requests.request(method, url, ...)` gives you full control to work with any HTTP method — even ones that are not natively exposed as methods in the `requests` API. This enables integration with specialized APIs like WebDAV.
+
+---
