@@ -954,3 +954,36 @@ __Key Takeaway:__
 Using `requests.request(method, url, ...)` gives you full control to work with any HTTP method — even ones that are not natively exposed as methods in the `requests` API. This enables integration with specialized APIs like WebDAV.
 
 ---
+# Day 49/60
+
+### Covered Today
+
+__Transport Adapters:__
+
+- `requests` uses a modular design powered by **Transport Adapters**.
+- Adapters define how `requests` interacts with different URL schemes (like `http://` or `https://`).
+
+__Built-in Adapter:__
+
+- `HTTPAdapter` is the default and handles HTTP/HTTPS using `urllib3`.
+- When a `Session` is created, `requests` automatically mounts an `HTTPAdapter` for both HTTP and HTTPS.
+
+__Custom Adapters:__
+
+- You can create custom adapters by subclassing `BaseAdapter`.
+- Useful for:
+  - Logging or intercepting requests.
+  - Returning mock responses for testing.
+  - Changing how SSL or retries are handled.
+
+__Mounting Adapters:__
+
+- Use `Session().mount(prefix, adapter)` to assign an adapter to a URL prefix.
+- All requests matching that prefix will use the specified adapter.
+- Longest prefix match is used.
+  - Example: `http://localhost/` will also match `http://localhost.example.com`.
+- Recommended: end full hostnames with `/` to prevent accidental matches.
+
+---
+
+
