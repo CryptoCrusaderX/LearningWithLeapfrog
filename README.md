@@ -1002,7 +1002,7 @@ __Automatic Retries:__
   - Allowed methods (`allowed_methods`)
 - Makes apps more resilient to temporary failures.
 
-__Key Takeaway:__
+__Key  Takeaway:__
 Transport Adapters let you customize `requests` for specific needs like legacy SSL or automatic retries, improving flexibility and reliability.
 ---
 
