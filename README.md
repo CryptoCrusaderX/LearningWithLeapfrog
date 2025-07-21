@@ -934,7 +934,7 @@ __Key Takeaway:__
 
 - `.request(method, url, ...)` in `requests` lets you use **any** HTTP verb your server supports.
 ---
-# LSPP Day 49/60
+## Day 49/60
 
 ### Covered Today:
 
@@ -954,7 +954,7 @@ __Key Takeaway:__
 Using `requests.request(method, url, ...)` gives you full control to work with any HTTP method — even ones that are not natively exposed as methods in the `requests` API. This enables integration with specialized APIs like WebDAV.
 
 ---
-# Day 50/60
+## Day 50/60
 
 ### Covered Today
 
@@ -984,6 +984,26 @@ __Mounting Adapters:__
   - Example: `http://localhost/` will also match `http://localhost.example.com`.
 - Recommended: end full hostnames with `/` to prevent accidental matches.
 
+---
+## Day 51/60  
+### Covered Today: Advanced Transport Adapters
+
+### Custom SSL Version
+- Some servers require old SSL versions like SSLv3.
+- You can subclass `HTTPAdapter` to force a specific SSL version.
+- Useful for connecting to legacy services not supported by default settings.
+
+### Automatic Retries
+- Requests doesn’t retry failed connections by default.
+- Use `Retry` from `urllib3.util` to add:
+  - Retry attempts (`total`)
+  - Delays (`backoff_factor`)
+  - Triggering status codes (`status_forcelist`)
+  - Allowed methods (`allowed_methods`)
+- Makes apps more resilient to temporary failures.
+
+### Key Takeaway
+Transport Adapters let you customize `requests` for specific needs like legacy SSL or automatic retries, improving flexibility and reliability.
 ---
 
 
