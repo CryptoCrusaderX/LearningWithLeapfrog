@@ -988,12 +988,12 @@ __Mounting Adapters:__
 ## Day 51/60  
 ### Covered Today: Advanced Transport Adapters
 
-### Custom SSL Version
+__Custom SSL Version:__
 - Some servers require old SSL versions like SSLv3.
 - You can subclass `HTTPAdapter` to force a specific SSL version.
 - Useful for connecting to legacy services not supported by default settings.
 
-### Automatic Retries
+__Automatic Retries:__
 - Requests doesn’t retry failed connections by default.
 - Use `Retry` from `urllib3.util` to add:
   - Retry attempts (`total`)
@@ -1002,7 +1002,7 @@ __Mounting Adapters:__
   - Allowed methods (`allowed_methods`)
 - Makes apps more resilient to temporary failures.
 
-### Key Takeaway
+__Key Takeaway:__
 Transport Adapters let you customize `requests` for specific needs like legacy SSL or automatic retries, improving flexibility and reliability.
 ---
 
