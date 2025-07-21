@@ -1001,9 +1001,6 @@ __Automatic Retries:__
   - Triggering status codes (`status_forcelist`)
   - Allowed methods (`allowed_methods`)
 - Makes apps more resilient to temporary failures.
-
-__Key  Takeaway:__
-Transport Adapters let you customize `requests` for specific needs like legacy SSL or automatic retries, improving flexibility and reliability.
 ---
 
 
