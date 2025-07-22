@@ -1002,5 +1002,27 @@ __Automatic Retries:__
   - Allowed methods (`allowed_methods`)
 - Makes apps more resilient to temporary failures.
 ---
+## Day 52/60  
+### Covered Today: Blocking vs Non-Blocking in Requests
+
+__Blocking I/O (Default):__  
+- The `requests` library is **synchronous** and **blocking** by default.  
+- Methods like `.get()` and `.post()` block until the full response is received.  
+- Even with `stream=True`, each read still blocks while waiting for data.
+
+__Non-Blocking Options:__  
+- Requests itself doesn't support non-blocking I/O natively.  
+- You can achieve non-blocking or asynchronous behavior using third-party libraries:
+  - `requests-threads`: Wraps requests with threading
+  - `grequests`: Asynchronous requests using `gevent`
+  - `requests-futures`: Uses `concurrent.futures` for background requests
+  - `httpx`: Fully async-capable HTTP client using `asyncio`
+
+__When to Use:__  
+- Ideal for applications needing parallel or real-time requests.  
+- Useful in:
+  - Scrapers downloading from multiple sources  
+  - UIs needing responsiveness  
+  - Background API calls in web services
 
 
