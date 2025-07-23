@@ -1024,5 +1024,31 @@ __When to Use:__
   - Scrapers downloading from multiple sources  
   - UIs needing responsiveness  
   - Background API calls in web services
+---
+## Day 53/60  
+### Covered Today: Header Ordering in Requests
+
+__Header Ordering in HTTP Requests:__
+
+- Normally, the order of HTTP headers doesn’t matter.
+- However, **some servers or systems may care about the order** — especially:
+  - Legacy systems
+  - Security-sensitive APIs
+  - Tools mimicking browser behavior or replays
+  - Systems using header order for fingerprinting or anomaly detection
+
+__Controlling Header Order in Requests:__
+
+- If you pass an `OrderedDict` to the `headers` parameter of `requests.get()` or `session.get()`, it **preserves that order**.
+- But! If you override **default headers**, those may be **reordered** due to Requests' internal defaults taking precedence.
+
+
+__Use Case :__
+
+- Developers might use it for debugging or replicating exact client behavior.
+- Security researchers or attackers might mimic the exact structure of real browser requests.
+- Corporations may enforce strict header layouts in internal APIs for compliance.
+
+---
 
 
