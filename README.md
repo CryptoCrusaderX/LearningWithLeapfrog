@@ -1050,5 +1050,27 @@ __Use Case :__
 - Corporations may enforce strict header layouts in internal APIs for compliance.
 
 ---
+## Day 54/60  
+### Covered Today: Timeouts in Requests
+
+__What Are Timeouts?:__
+- Timeouts prevent your program from hanging indefinitely when a server is slow or unresponsive.
+- Requests does not set a timeout by default, so you must explicitly specify one.
+
+__Types of Timeouts:__
+1. **Connect Timeout**  
+   - The number of seconds to wait for your client to establish a connection to the remote server.  
+   - Corresponds to the `connect()` system call.  
+   - It is recommended to set this slightly above a multiple of 3 due to TCP retransmission timing.
+
+2. **Read Timeout**  
+   - The number of seconds to wait for the server to send a response after the request is made.  
+   - Specifically, the time between bytes sent from the server (usually the time before the first byte is received).
+
+
+__Real-World Considerations__
+- When a domain has multiple IP addresses (e.g., IPv4 and IPv6), urllib3 will try them sequentially. This can multiply the effective timeout.  
+- Timeout values are not wall-clock timers; real elapsed time may be longer due to retries or system behavior.
+---
 
 
