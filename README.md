@@ -1073,4 +1073,34 @@ __Real-World Considerations__
 - Timeout values are not wall-clock timers; real elapsed time may be longer due to retries or system behavior.
 ---
 
+## Day 55/60  
+### Covered Today: OAuth 1 Signing with Requests-OAuthlib
+
+__What Is OAuth 1?:__
+- OAuth 1 is a protocol for token-based authentication.
+- It allows secure API access without sharing user passwords.
+- Though mostly replaced by OAuth 2, it’s still used by some APIs (e.g., Twitter API v1.1).
+
+__How It Works:__
+1. **Consumer Credentials**
+   - Identifies your app (client) to the API.
+   - Requires a `consumer_key` and `consumer_secret`.
+
+2. **Access Token Credentials**
+   - Represents user authorization.
+   - Needs an `access_token` and `access_token_secret`.
+
+3. **Signed Requests**
+   - Uses HMAC-SHA1 or other algorithms to sign each request.
+   - Verifies authenticity and prevents tampering.
+
+__Two-Legged OAuth:__
+- Only the app's credentials are used (no user involved).
+- Common for server-to-server communication or internal tools.
+
+__Real-World Considerations__
+- Necessary for legacy systems that still rely on OAuth 1.
+- Still valuable when precise request verification and cryptographic signing are required.
+- Recommended to store keys securely and rotate tokens when possible.
+---
 
