@@ -1104,3 +1104,33 @@ __Real-World Considerations__
 - Recommended to store keys securely and rotate tokens when possible.
 ---
 
+## Day 56/60  
+### Covered Today: OAuth 1 – Three-legged Flow
+
+__What Is OAuth 1.0a?__  
+OAuth 1.0a is a protocol that allows applications to access user data from another service (like X/Twitter) without needing the user’s password. It uses cryptographic signing to ensure authenticity and integrity of requests.
+
+__Why Three-Legged?__  
+The term "three-legged" comes from the three steps involved in the process:
+
+1. Request Token
+- The client (your app) sends a signed request to the provider (e.g., X/Twitter) asking for a temporary **Request Token**.
+- This token is used to identify the upcoming user authorization step.
+- At this point, the app doesn’t have permission to access user data yet.
+
+2. User Authorization
+- The user is redirected to a special URL hosted by the provider.
+- The user logs in and explicitly authorizes the app to access their account.
+- After authorization, the provider issues a **verifier (PIN code or callback)**.
+
+ 3. Access Token
+- The client exchanges the **Request Token** + **Verifier** for a long-term **Access Token**.
+- This token is what the app will use to make authenticated requests to the user’s protected resources.
+
+__Security Features of OAuth 1.0a__
+- Uses **HMAC-SHA1** to sign every request.
+- Prevents **tampering** and **replay attacks**.
+- The client never stores or sees the user’s password.
+
+---
+
