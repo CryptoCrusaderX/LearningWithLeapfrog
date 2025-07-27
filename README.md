@@ -1134,3 +1134,29 @@ __Security Features of OAuth 1.0a__
 
 ---
 
+## Day 57/60  
+### Covered Today: OAuth 2 – Password & Client Credentials Grant
+
+
+__What Is OAuth 2?:__
+
+OAuth 2 is a flexible and modern authorization framework. It allows applications to obtain limited access to user accounts on an HTTP service without exposing user credentials.
+
+
+__Grant Types Covered Today__
+
+ 1. Password Grant (Resource Owner Password Credentials Grant)
+    - Used when the user **trusts the app completely** (e.g., official mobile apps).
+    - The client collects the **username and password**, sends them to the **authorization server**, and receives an **access token** in return.
+    - **Not recommended** for third-party apps due to the security risk of handling passwords.
+
+  Flow:
+    1. App sends: `username`, `password`, `client_id`, `client_secret`
+    2. Server responds with: `access_token` (and optionally, `refresh_token`)
+
+
+2. Client Credentials Grant
+    - Used for **machine-to-machine (M2M)** communication where there is **no user**.
+    - The client authenticates itself using `client_id` and `client_secret` to get an access token.
+
+---
