@@ -1160,3 +1160,44 @@ __Grant Types Covered Today__
     - The client authenticates itself using `client_id` and `client_secret` to get an access token.
 
 ---
+## Day 58/60  
+### Covered Today: OAuth 2 – Authorization Code Flow with PKCE
+
+__What Is Authorization Code Flow with PKCE?__  
+This flow is an **enhanced version** of the Authorization Code Flow, specifically designed for **public clients** (e.g., mobile apps, single-page apps) that cannot securely store a `client_secret`.
+
+__Why PKCE?__  
+PKCE (Proof Key for Code Exchange) protects the flow from interception attacks like **authorization code injection** or **code leakage** by introducing a dynamic secret created by the app at runtime.
+
+__Steps Involved__
+
+1. **Client Creates a Code Verifier & Challenge**
+   - The client generates a random `code_verifier`.
+   - A hashed version (usually `SHA256`) of this verifier is sent as a `code_challenge`.
+
+2. **Authorization Request**
+   - The user is redirected to the **authorization server** with:
+     - `response_type=code`
+     - `client_id`
+     - `redirect_uri`
+     - `code_challenge`
+     - `code_challenge_method=S256`
+
+3. **User Authorizes App**
+   - The user logs in and grants permission.
+   - The server sends back an `authorization_code` to the `redirect_uri`.
+
+4. **Token Request**
+   - The client sends:
+     - `authorization_code`
+     - `client_id`
+     - `code_verifier`
+     - `redirect_uri`
+   - The server verifies the `code_verifier` against the previously sent challenge and returns an `access_token`.
+
+__Why It’s Secure__
+- Doesn’t require storing `client_secret`.
+- Protects against **intercepted redirect URIs**.
+- Works well with mobile apps and SPAs where storing secrets is unsafe.
+
+---
