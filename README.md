@@ -1201,3 +1201,44 @@ __Why It’s Secure__
 - Works well with mobile apps and SPAs where storing secrets is unsafe.
 
 ---
+## Day 59/60  
+### Covered Today: Real-World Integration + Token Refreshing
+
+__What Is Token Refreshing in OAuth 2?:__  
+In real-world applications, access tokens expire quickly for security reasons. Instead of asking users to re-authenticate, apps use a **refresh token** to obtain a new access token.
+
+__Key Terms:__
+
+- **Access Token**  
+  - A short-lived credential used to access protected resources.
+  - Expires after a defined time (e.g., 1 hour).
+
+- **Refresh Token**  
+  - A long-lived credential used to obtain new access tokens.
+  - Returned during initial authorization if requested.
+  - Must be stored securely.
+
+__Token Refresh Flow:__
+
+1. When the access token expires:
+   - App sends a request to the token endpoint with:
+     - `grant_type=refresh_token`
+     - `refresh_token=<refresh_token>`
+     - `client_id` and optionally `client_secret`
+2. Server responds with:
+   - A new `access_token`
+   - Optionally a new `refresh_token`
+
+__Real-World Considerations:__
+
+- **Token Storage**: Use encrypted and secure storage (e.g., OS keychains, secure databases).
+- **Refresh Token Rotation**: Some providers issue a new refresh token each time. Store the most recent one.
+- **Fallbacks**: If refreshing fails (e.g., due to token revocation), prompt the user to re-authenticate.
+
+__Security Practices:__
+
+- Always use HTTPS when transmitting tokens.
+- Never expose tokens in front-end code or public repositories.
+- Revoke tokens explicitly when users log out.
+
+---
