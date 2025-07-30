@@ -1242,3 +1242,39 @@ __Security Practices:__
 - Revoke tokens explicitly when users log out.
 
 ---
+---
+## Day 60/60  
+### Covered Today: API Pagination
+
+**What Is API Pagination?**  
+APIs divide large data into smaller pages to make fetching efficient and fast.
+
+**Key Terms:**
+
+- **Offset-Based Pagination**  
+  Uses page number and limit (e.g., `?page=2&limit=20`). Simple but can be unreliable if data changes.
+
+- **Cursor-Based Pagination**  
+  Uses a cursor token to mark the next page (e.g., `?cursor=abc123`). More stable for dynamic data.
+
+- **Link Header Pagination**  
+  Pagination info in response headers (e.g., GitHub’s `Link` header) with URLs for next pages.
+
+**Basic Flow:**
+
+1. Request first page.  
+2. Check for pagination info (offset, cursor, or link header).  
+3. Request next page using that info.  
+4. Repeat until no more pages.
+
+**Real-World Tips:**
+
+- Read API docs to know which pagination method is used.  
+- Cursor pagination is best for frequently changing data.  
+- Handle paging carefully to avoid missing or duplicate data.  
+- Watch API rate limits when paging through lots of data.
+
+**Use Cases:**  
+Fetching posts, commits, logs, or any large dataset in chunks.
+
+---
